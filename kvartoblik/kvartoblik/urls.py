@@ -21,7 +21,7 @@ from apartments.views import *
 
 router = SimpleRouter()
 router.register(r'project', BuildingProjectViewSet, basename='project')
-router.register(r'projectcreate', BuildingProjectCreateViewSet)
+router.register(r'projectcreate', BuildingProjectCreateViewSet, basename='projectcreate')
 router.register(r'building', BuildingViewSet)
 router.register(r'buildingcreate', BuildingCreateViewSet)
 router.register(r'section', SectionViewSet)
